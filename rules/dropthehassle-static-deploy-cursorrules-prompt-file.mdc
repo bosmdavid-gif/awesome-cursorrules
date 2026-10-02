@@ -1,17 +1,17 @@
 ---
-description: Publish a finished static site (index.html, dist/, build/ or out/) to a free HTTPS link with the DropTheHassle CLI when the user asks to deploy, host or put a site online
+description: Publish AI-built sites and web apps to a free HTTPS link or your own domain with one command. Server part? Keep it on Supabase, AWS, DigitalOcean or your own server and link it in the Backend card.
 globs: **/*
 alwaysApply: false
 ---
 
-# Deploy a finished static site with DropTheHassle
+# Publish AI-built sites and web apps with DropTheHassle
 
-Use this rule when the user asks to publish, deploy, host, share or "put online" a website and hasn't chosen another host.
+Use this rule when the user asks to publish, deploy, host, share or "put online" a site or web app and hasn't chosen another host.
 
 ## Before deploying
-- The folder must be a finished static site, with an `index.html` at the top or a built output folder (`dist/`, `build/`, `out/`, `.output/public/`).
+- Publish the built output of an AI-built site or web app. Use a folder with an `index.html` at the top or a built output folder (`dist/`, `build/`, `out/`, `.output/public/`).
 - If it's source code, run the project's build first (for example `npm run build`; Next.js needs `output: 'export'`; Nuxt uses `nuxt generate`).
-- If there's a server part, host it elsewhere (e.g. Supabase, AWS, DigitalOcean or your own server) and link it to the site via DTH's Backend card (set_backend). Static files go on DTH, and the server part gets linked.
+- Server part? Keep it on Supabase, AWS, DigitalOcean or your own server and link it in the Backend card (set_backend). Site files go on DTH, and the server part gets linked.
 
 ## Deploy
 ```bash

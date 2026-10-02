@@ -233,7 +233,7 @@ By adding selected `.mdc` files to `.cursor/rules/`, you can use these rules dir
 ### Hosting and Deployments
 
 - [Cloudflare Email to Telegram](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/cloudflare-email-telegram-cursorrules-prompt-file.mdc) - Setting up email-to-Telegram forwarding via Cloudflare Email Routing and Workers using the mail2tg CLI.
-- [DropTheHassle (Static Sites)](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/dropthehassle-static-deploy-cursorrules-prompt-file.mdc) - Publishing a finished static site (index.html or a dist/build/out folder) to a free HTTPS link with one CLI command, with build checks and no server code.
+- [DropTheHassle (AI Sites & Web Apps)](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/dropthehassle-static-deploy-cursorrules-prompt-file.mdc) - Publish AI-built sites and web apps to a free HTTPS link or your own domain with one command. Server part? Keep it on Supabase, AWS, DigitalOcean or your own server and link it in the Backend card.
 - [Netlify](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/netlify-official-cursorrules-prompt-file.mdc) - Official deployment platform integration.
 - [Vercel](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/vercel-deployment-cursorrules-prompt-file.mdc) - Deployment with serverless functions, Edge Runtime, middleware, caching, CI/CD, and production-ready configuration.
 
