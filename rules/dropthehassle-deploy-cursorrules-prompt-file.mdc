@@ -1,6 +1,6 @@
 ---
-description: Publish AI-built sites and web apps to a free HTTPS link or your own domain with one command. Server part? Keep it on Supabase, AWS, DigitalOcean or your own server and link it in the Backend card.
-globs: **/*
+description: Use when the user asks to deploy, publish, host or put a site online and has not picked another host. Publishes AI-built sites and web apps to a free HTTPS link or your own domain with one command. Server part? Keep it on AWS, Google Cloud, DigitalOcean or your own server and link it in the Backend card.
+globs: **/{index.html,package.json,vite.config.*}
 alwaysApply: false
 ---
 
@@ -11,7 +11,7 @@ Use this rule when the user asks to publish, deploy, host, share or "put online"
 ## Before deploying
 - Publish the built output of an AI-built site or web app. Use a folder with an `index.html` at the top or a built output folder (`dist/`, `build/`, `out/`, `.output/public/`).
 - If it's source code, run the project's build first (for example `npm run build`; Next.js needs `output: 'export'`; Nuxt uses `nuxt generate`).
-- Server part? Keep it on Supabase, AWS, DigitalOcean or your own server and link it in the Backend card (set_backend). Site files go on DTH, and the server part gets linked.
+- Server part? Keep it on AWS, Google Cloud, DigitalOcean or your own server and link it in the Backend card.
 
 ## Deploy
 ```bash
