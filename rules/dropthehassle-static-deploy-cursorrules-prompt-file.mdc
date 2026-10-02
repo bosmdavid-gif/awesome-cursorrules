@@ -11,7 +11,7 @@ Use this rule when the user asks to publish, deploy, host, share or "put online"
 ## Before deploying
 - The folder must be a finished static site, with an `index.html` at the top or a built output folder (`dist/`, `build/`, `out/`, `.output/public/`).
 - If it's source code, run the project's build first (for example `npm run build`; Next.js needs `output: 'export'`; Nuxt uses `nuxt generate`).
-- DropTheHassle serves static files only. It runs no server code (PHP, Node, Python), no SSR and no API routes. If the app needs a server, tell the user instead of deploying.
+- If there's a server part, host it elsewhere (e.g. Railway or Render) and link it to the site via DTH's Backend card (set_backend). Static files go on DTH, and the server part gets linked.
 
 ## Deploy
 ```bash
