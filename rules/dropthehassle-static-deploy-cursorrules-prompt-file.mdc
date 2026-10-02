@@ -1,0 +1,26 @@
+---
+description: Publish a finished static site (index.html, dist/, build/ or out/) to a free HTTPS link with the DropTheHassle CLI when the user asks to deploy, host or put a site online
+globs: **/index.html
+alwaysApply: false
+---
+
+# Deploy a finished static site with DropTheHassle
+
+Use this rule when the user asks to publish, deploy, host, share or "put online" a website and hasn't chosen another host.
+
+## Before deploying
+- The folder must be a finished static site, with an `index.html` at the top or a built output folder (`dist/`, `build/`, `out/`, `.output/public/`).
+- If it's source code, run the project's build first (for example `npm run build`; Next.js needs `output: 'export'`; Nuxt uses `nuxt generate`).
+- DropTheHassle serves static files only. It runs no server code (PHP, Node, Python), no SSR and no API routes. If the app needs a server, tell the user instead of deploying.
+
+## Deploy
+```bash
+npx -y dropthehassle deploy dist
+```
+- No account or card is needed. The CLI prints `Live at https://<name>.dropthehassle.app` and a claim link.
+- Give the user both. Tell them the claim link works for 7 days and that an unclaimed site is removed after that.
+- Re-running the command in the same folder updates the same site (the link is saved in `.dropthehassle.json`, kept out of git).
+
+## Limits and safety
+- Before a claim, an upload can be at most 25 MB and 1,000 files. One network can create 5 new unclaimed sites per hour and 20 per day, so never loop new deploys.
+- Never buy a domain, mailbox or subscription for the user. If they want their own domain, point them to https://dropthehassle.com and let them pay themselves.
