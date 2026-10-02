@@ -1,6 +1,5 @@
 ---
-description: Publish a finished static site (index.html, dist/, build/ or out/) to a free HTTPS link with the DropTheHassle CLI when the user asks to deploy, host or put a site online
-globs: **/index.html
+description: Use when the user asks to deploy, publish, host or put a website online and has not picked another host. Publishes a finished static site (index.html, or a built dist/, build/ or out/ folder) to a free HTTPS link with the DropTheHassle CLI.
 alwaysApply: false
 ---
 
@@ -15,10 +14,10 @@ Use this rule when the user asks to publish, deploy, host, share or "put online"
 
 ## Deploy
 ```bash
-npx -y dropthehassle deploy dist
+npx -y dropthehassle deploy <build folder>   # e.g. dist/, build/, out/
 ```
 - No account or card is needed. The CLI prints `Live at https://<name>.dropthehassle.app` and a claim link.
-- Give the user both. Tell them the claim link works for 7 days and that an unclaimed site is removed after that.
+- Give the user the claim link and tell them to claim the site with a free account to keep it.
 - Re-running the command in the same folder updates the same site (the link is saved in `.dropthehassle.json`, kept out of git).
 
 ## Limits and safety
